@@ -11,10 +11,10 @@ int creer_image(){
     fprintf(q,"4 4\n");
     fprintf(q,"255\n");
 
-    fprintf(q," 255 0 87  255 0 87  255 0 87  255 0 87");
-    fprintf(q," 255 254 0  255 254 0  255 254 0  255 254 0");
-    fprintf(q," 255 0 254  255 0 254  255 0 254  255 0 254");
-    fprintf(q," 0 255 0  0 255 0  0 255 0  0 255 0");
+    fprintf(q,"255 0 87  255 0 87  255 0 87  255 0 87\n");
+    fprintf(q,"255 254 0  255 254 0  255 254 0  255 254 0\n");
+    fprintf(q,"255 0 254  255 0 254  255 0 254  255 0 254\n");
+    fprintf(q,"0 255 0  0 255 0  0 255 0  0 255 0\n");
     
     fclose(q);
     printf("Vous avez creer une image!\n");
