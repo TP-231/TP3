@@ -38,8 +38,8 @@ int main() {
             
             break;
         case 8:
-            printf("===APPLIQUER FILTRE MEDIAN===");
-            appliquer_filtre_median(&image_orig);
+            printf("=== APPLIQUER FILTRE MEDIAN ===\n");
+            Image image_filtree=appliquer_filtre_median(&image_orig);
             printf("vous avez appliqué le filtre médian à l'image");
             break;
         case 9:
