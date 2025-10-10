@@ -13,7 +13,7 @@ typedef struct {
 } Image;
 
 int compare_ints(const void* a, const void* b) {
-    return ((int)a - (int)b);
+    return (*(int*)a - *(int*)b);
 }
 
 Image appliquer_filtre_median(const Image *image_orig) {
@@ -41,6 +41,8 @@ Image appliquer_filtre_median(const Image *image_orig) {
     for (int y = 0; y < h; y++) {
         for (int x = 0; x < l; x++) {
             int blue_values[9];
+            int red_values[9];
+            int green_values[9];
             int count = 0;
 
             
@@ -89,4 +91,3 @@ void liberer_image(Image *img) {
         img->pixels = NULL;
     }
 }
-*/
