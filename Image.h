@@ -63,18 +63,6 @@ Image lire_image(const char *nom_fichier) {
     fclose(f);
     return img;
 }
-void menu() {
-    printf("\n===== MENU =====\n");
-    printf("1. Afficher l'image PPM\n");
-    printf("2. Foncer les pixels a dominance RBG\n");
-    printf("3. Eclairsir tous les pixels a dominance RBG\n");
-    printf("4. Passer en noir et en blanc\n");
-    printf("5. Creer le negatif d'une image\n");
-    printf("6. Afficher la taille d'une image\n");
-    printf("7. Decouper et garder une partie d'une image\n");
-    printf("8. Appliquer a une image le filtre median\n");
-    printf("9. Quitter le programme");
-}
 
 #endif
 
