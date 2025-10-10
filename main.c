@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include"image.h"
 #include "NoirBlanc.h"
+#include "Filtre_median.h"
 
 int main() {
     int taille;
@@ -37,7 +38,9 @@ int main() {
             
             break;
         case 8:
-
+            printf("===APPLIQUER FILTRE MEDIAN===");
+            appliquer_filtre_median(&image_orig);
+            printf("vous avez appliqué le filtre médian à l'image");
             break;
         case 9:
         	return 0;
