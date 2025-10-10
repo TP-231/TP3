@@ -1,6 +1,4 @@
-
 #include<stdio.h>
-#include"image.h"
 
 int creer_image(){
     FILE*q=fopen("image.ppm","w");
@@ -35,5 +33,6 @@ void menu() {
     printf("6. Afficher la taille d'une image\n");
     printf("7. Decouper et garder une partie d'une image\n");
     printf("8. Appliquer a une image le filtre median\n");
+    printf("9. Quitter le programme");
 }
 
